@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:id="@+id/Main_ImageView"
+        android:layout_gravity="center"
+        android:src="@drawable/face" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/user"
+            android:id="@+id/NameImageView"
+            android:layout_weight="4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ClientName_EditText"
+            android:textAlignment="center"
+            android:hint="请输入姓名"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="com.example.wuyunpeng.facevertificationultimate.CircleImageButton"
+            android:id="@+id/NameCircleImageButton"
+            android:layout_weight="4"
+            android:src="@drawable/cancle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/password"
+            android:id="@+id/IdImageView"
+            android:layout_weight="4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ClientID_EditText"
+            android:hint="请输入ID号"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="com.example.wuyunpeng.facevertificationultimate.CircleImageButton"
+            android:id="@+id/IdCircleImageButton"
+            android:layout_weight="4"
+            android:src="@drawable/cancle"
+            android:hint="请输入ip地址" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ip"
+            android:id="@+id/IPImageView"
+            android:layout_weight="4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:id="@+id/IP_EditText"
+            android:layout_weight="1"
+            android:hint="请输入ip地址"
+            android:textAlignment="center" />
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.example.wuyunpeng.facevertificationultimate.CircleImageButton"
+            android:id="@+id/IpCircleImageButton"
+            android:layout_weight="4"
+            android:src="@drawable/cancle" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录认证"
+        android:id="@+id/Login_Button"
+        android:layout_gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调整姿态使头部进入轮廓区域"
+        android:id="@+id/MainTextView"
+        android:background="#f0ffff"
+        android:textColor="#ff0000"
+        android:textAlignment="center"
+        android:layout_weight="0.02"
+        android:textSize="25dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.98">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FaceVertificationCameraSurfaceView"/>
+
+        <com.example.wuyunpeng.facevertificationultimate.DrawSurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/MainDarwSurfaceView" />
+
+        <com.example.wuyunpeng.facevertificationultimate.CircleImageButton
+            android:layout_width="83dp"
+            android:layout_height="60dp"
+            android:id="@+id/FaceVertificationImageButton"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/camera0" />
+
+        <com.example.wuyunpeng.facevertificationultimate.CircleProcessBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FaceVetificationProgressBar"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+</LinearLayout>
